@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <header>
+    <h1><br/><img src="./assets/pata_a3.png">cdsar626</h1>
+    </header>
+    <NavBar></NavBar>
+    <div id="flex">
+      <redes1></redes1>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import NavBar from './components/NavBar.vue'
+  import Redes1 from './components/Redes1.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'web',
+    components: {
+      NavBar,
+      Redes1
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    background-color: rgb(80,200,255);
+    text-align: center;
+  }
+  header {
+    font-family: BoaH;
+    text-shadow: gray 8px 8px 5px;
+    color: rgb(35,220,190);
+  }
+  header img {
+    height:3em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+  }
+
+  #flex {
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
 </style>
