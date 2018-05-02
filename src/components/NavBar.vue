@@ -1,8 +1,9 @@
 <template>
   <nav>
     <ul>
-      <a href="/"><li>Inicio</li></a>
-      <a href="/redes1"><li>Redes1</li></a>
+      <router-link to="/"><li>Inicio</li></router-link>
+      <router-link to="/redes1"><li>Redes1</li></router-link>
+      <router-link to="/files"><li>Archivos</li></router-link>
     </ul>
   </nav>
 </template>

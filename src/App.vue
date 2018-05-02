@@ -5,20 +5,17 @@
     </header>
     <NavBar></NavBar>
     <div id="flex">
-      <redes1></redes1>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
   import NavBar from './components/NavBar.vue'
-  import Redes1 from './components/Redes1.vue'
-
   export default {
     name: 'web',
     components: {
-      NavBar,
-      Redes1
+      NavBar
     }
   }
 </script>
