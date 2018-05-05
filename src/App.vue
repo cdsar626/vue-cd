@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-    <h1><br/><img src="./assets/pata_a3.png">cdsar626</h1>
+    <h1><br/><a href="/"><img src="./assets/pata_a3.png">cdsar626</a></h1>
     </header>
     <NavBar></NavBar>
     <div id="flex">
@@ -22,13 +22,17 @@
 
 <style>
   body {
-    background-color: rgb(80,200,255);
+    background-color: rgb(80,210,255);
     text-align: center;
   }
   header {
     font-family: BoaH;
     text-shadow: gray 8px 8px 5px;
     color: rgb(35,220,190);
+  }
+  header a {
+    text-decoration: none;
+    color: inherit;
   }
   header img {
     height:3em;

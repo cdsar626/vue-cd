@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "formidable": "^1.2.1",
+    "nprogress": "^0.2.0",
     "serve-index": "^1.9.1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"

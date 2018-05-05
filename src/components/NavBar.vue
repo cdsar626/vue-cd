@@ -29,10 +29,18 @@
   nav li {
     display: inline-block;
     list-style: none;
+    border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     margin: 0 5px;
   }
   nav li:hover {
     border-bottom: 5px solid rgb(100,150,200);
+  }
+  a {
+    text-decoration: none;
+    color:black;
+  }
+  a:hover{
+    color: slategray;
   }
 </style>
