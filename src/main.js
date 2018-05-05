@@ -7,14 +7,15 @@ Vue.use(VueRouter)
 
 
 const Redes1 = () => import('./components/Redes1.vue') //Carga on-demand (lazy load)
+const Upload = () => import('./components/Upload.vue')
 
 const router = new VueRouter({
   routes: [
     {path: '/', template: '<div></div>'},
     {path: '/redes1', component: Redes1},
-    {path: '/files', template: '<div></div>'}
+    {path: '/upload', component: Upload},
   ],
-  mode: 'history'
+  mode: 'hash'
 })
 
 new Vue({

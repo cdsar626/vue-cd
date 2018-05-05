@@ -3,7 +3,8 @@
     <ul>
       <router-link to="/"><li>Inicio</li></router-link>
       <router-link to="/redes1"><li>Redes1</li></router-link>
-      <router-link to="/files"><li>Archivos</li></router-link>
+      <a href="/files"><li>Archivos</li></a>
+      <router-link to="/upload"><li>Upload</li></router-link>
     </ul>
   </nav>
 </template>
