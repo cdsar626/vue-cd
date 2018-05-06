@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-    <h1><br/><a href="/"><img src="./assets/pata_a3.png">cdsar626</a></h1>
+    <h1><br/><router-link to="/" exact><img src="./assets/pata_black_A_small.png">cdsar626</router-link></h1>
     </header>
     <NavBar></NavBar>
     <div id="flex">
@@ -26,12 +26,14 @@
     text-align: center;
   }
   header {
-    font-family: BoaH;
     text-shadow: gray 8px 8px 5px;
     color: rgb(35,220,190);
   }
-  header a {
+  header a{
     text-decoration: none;
+    color: inherit;
+  }
+  header a:hover {
     color: inherit;
   }
   header img {
