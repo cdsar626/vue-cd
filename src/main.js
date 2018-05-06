@@ -14,7 +14,7 @@ const Upload = () => import('./components/Upload.vue')
 
 const router = new VueRouter({
   routes: [
-    {path: '/', template: '<div></div>'},
+    {path: '/', template: ''},
     {path: '/redes1', component: Redes1},
     {path: '/upload', component: Upload},
   ],

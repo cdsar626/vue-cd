@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul>
-      <router-link to="/"><li>Inicio</li></router-link>
+      <router-link to="/" exact><li>Inicio</li></router-link>
       <router-link to="/redes1"><li>Redes1</li></router-link>
       <a href="/files"><li>Archivos</li></a>
       <router-link to="/upload"><li>Upload</li></router-link>
@@ -33,14 +33,29 @@
     border-bottom: 5px solid transparent;
     margin: 0 5px;
   }
-  nav li:hover {
-    border-bottom: 5px solid rgb(100,150,200);
-  }
   a {
     text-decoration: none;
     color:black;
+    transition: border linear 0.15s;
   }
   a:hover{
     color: slategray;
+    border-bottom: 5px solid rgb(100,150,200);
+    padding-bottom: 0px;
   }
+.router-link-active{
+  border-bottom: 3px solid rgb(100,150,200);
+  padding-bottom: 1px;
+}
+</style>
+
+<style>
+a {
+  color: black;
+  text-decoration-style: dotted;
+}
+
+a:hover {
+  color: gray;
+}
 </style>
