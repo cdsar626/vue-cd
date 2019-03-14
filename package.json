@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "compression": "^1.7.2",
+    "express": "^4.16.4",
     "formidable": "^1.2.1",
     "nprogress": "^0.2.0",
     "serve-index": "^1.9.1",
