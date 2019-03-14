@@ -26,7 +26,7 @@ app.get('/upload', function(req,res){
 app.get('/redes1', function(req,res){
   res.redirect('/#/redes1');
 });
-let puerto = 80;
+let puerto = process.env.PORT || 80;
 app.listen(puerto, function(){
   console.log(`escuchando en localhost:${puerto}`);
 });
